@@ -6,6 +6,7 @@ dependencies:
   - caiman
   - numpy<2
   - jupyterlab
+  - ipympl
   - ipykernel
   - pip
   - pip:
