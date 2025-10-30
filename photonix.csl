@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0"
+  class="in-text" name="PhonotiX" default-locale="en-US">
+  <info>
+    <title>PhonotiX</title>
+    <id>http://www.zotero.org/styles/phonotix-custom-1</id>
+    <link href="http://www.zotero.org/styles/vancouver" rel="template"/>
+    <author>
+      <name>PhonotiX Journal Style</name>
+      <email>support@phonotix-journal.org</email>
+    </author>
+    <category citation-format="numeric"/>
+    <summary>Custom citation style matching PhonotiX examples: year;volume(issue):pages.</summary>
+    <updated>2025-10-30T00:00:00+00:00</updated>
+  </info>
+
+  <citation collapse="citation-number">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout prefix="[" suffix="]" delimiter=",">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography et-al-min="11" et-al-use-first="10" entry-spacing="0" line-spacing="1">
+    <layout suffix=".">
+      <text variable="author" suffix=". "/>
+      <text variable="title" suffix=". "/>
+      <text variable="container-title" font-style="italic" suffix=". "/>
+      <date variable="issued">
+        <date-part name="year" suffix=";"/>
+      </date>
+      <text variable="volume"/>
+      <group prefix="(" suffix=")" delimiter="">
+        <text variable="issue"/>
+      </group>
+      <text prefix=":" variable="page" suffix="."/>
+    </layout>
+  </bibliography>
+</style>
